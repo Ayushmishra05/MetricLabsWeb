@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetricsLab - AI Solutions</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to MetricsLab</h1>
+            <p>Transforming Data into Intelligence</p>
+            <a href="#cards" class="cta-button">Explore Our Solutions</a>
+        </div>
+    </section>
+
+    <!-- Cards Section -->
+    <section id="cards" class="cards-section">
+        <div class="section-header">
+            <h2>Our Solutions</h2>
+            <p>Discover how our AI-powered tools can transform your business</p>
+        </div>
+        <div class="cards-grid">
+            <div class="card">
+                <i class="fas fa-brain"></i>
+                <h3>AI Analytics</h3>
+                <p>Advanced analytics powered by cutting-edge artificial intelligence algorithms.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Predictive Insights</h3>
+                <p>Make data-driven decisions with our predictive analytics platform.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-robot"></i>
+                <h3>Machine Learning</h3>
+                <p>Custom machine learning solutions tailored to your business needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="section-header">
+            <h2>Our Team</h2>
+            <p>Meet the experts behind our innovation</p>
+        </div>
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="{{ url_for('static', filename='images/team1.jpg') }}" alt="Team Member">
+                <h3>John Doe</h3>
+                <p>AI Research Lead</p>
+            </div>
+            <div class="team-member">
+                <img src="{{ url_for('static', filename='images/team2.jpg') }}" alt="Team Member">
+                <h3>Jane Smith</h3>
+                <p>ML Engineer</p>
+            </div>
+            <div class="team-member">
+                <img src="{{ url_for('static', filename='images/team3.jpg') }}" alt="Team Member">
+                <h3>Mike Johnson</h3>
+                <p>Data Scientist</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="section-header">
+            <h2>Get in Touch</h2>
+            <p>Let's discuss how we can help your business grow</p>
+        </div>
+        <form class="contact-form">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
